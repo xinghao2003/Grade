@@ -793,11 +793,12 @@ class Grade extends PluginBase implements Listener{
 		$grade = $this->getGrade($player);
 		$name = $player->getDisplayName();
 		$title = $this->getTitle($grade);
+		$user = $player->getName();
 		$this->factionspro=$this->getServer()->getPluginManager()->getPlugin("FactionsPro");
-		if($this->factionspro->getPlayerFaction($player)==null){
+		if($this->factionspro->getPlayerFaction($user)==null){
         $ghs="未加入公会";
         }else{
-        $ghs=$this->factionspro->getPlayerFaction($player);
+        $ghs=$this->factionspro->getPlayerFaction($user);
         }
 
 		$msg = TextFormat::GOLD."[{$level}]".TextFormat::AQUA."<$ghs>".TextFormat::GREEN."[Lv.{$grade} {$title}]".TextFormat::YELLOW." {$name}: ".TextFormat::WHITE.$event->getMessage();
