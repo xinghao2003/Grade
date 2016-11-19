@@ -119,7 +119,7 @@ class TipSender extends Task{
 			///////////////////////////
 			
 			//$player->sendPopup($str);
-			$player->sendTip("§eLv. $grade $title | §b经验值：$exp/$expM | §a钱包: $money 元 \n§e血量：$xue/$xueM | §d所在世界：$world | §c坐标：($x:$y:$z) $bearing \n§5节操：$mi | §b权限：$qx | §2在线人数：$online | §4公会：$ghs \n§f手持：$id: $ts | §b目前时间: ".date("H")." :".date("i")." :".date("s")." | §c流畅度：$tps | §d负荷量：$cpu%");
+			$player->sendPopup("§eLv. $grade $title | §b经验值：$exp/$expM | §a钱包: $money 元 | §d所在世界：$world | §c坐标：($x:$y:$z) $bearing \n§5节操：$mi | §b权限：$qx | §2在线人数：$online | §4公会：$ghs | §f手持：$id: $ts | §b目前时间: ".date("H")." :".date("i")." :".date("s")." ");
 		}
 		/*
 		foreach ($this->plugin->needUpdate as $key => $player) {
