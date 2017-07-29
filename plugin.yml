@@ -1,11 +1,10 @@
 name: Grade
 main: Grade\Grade
-version: 1.0.6
-api: [1.0.0]
-
+version: 1.2.0
+api: [3.0.0-ALPHA7]
 load: POSTWORLD
 author: Him188
-description: A EXP Plugin
+description: A Grade Point System for PocketMine-MP
 commands:
  exp:
   aliases: ["grade"]
@@ -13,12 +12,10 @@ commands:
   usage: "/exp"
   permission: Grade.command.exp
  convert:
-  aliases: ["兑换"]
   description: "用节操兑换物品"
   usage: "/convert <编号> [数量]"
   permission: Grade.command.convert
  setfix:
-  aliases: ["设置昵称"]
   description: "设置昵称"
   usage: "/setfix <目标玩家> [昵称]"
   permission: Grade.command.setfix
